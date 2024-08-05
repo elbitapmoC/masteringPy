@@ -106,5 +106,48 @@ range_1 = range(6)
 
 def funcTypeTests(a, b, c):
   return f"{a}\n{b}\n{c}"
-# print(funcTypeTests(list_1, tuple_1, range_1))
+print(funcTypeTests(list_1, tuple_1, range_1))
+
+# RANDOM NUMBER
+import random
+print(random.randint(1, 10))
+
+# TYPE CASTING
+floatedType = 1.2345
+convertedIntType = int(floatedType)
+print(convertedIntType)
+
+# STRINGS-METHODS-START --------
+# Targeting individual letters
+strTestHelloWorld = "Hello, World!"
+print(strTestHelloWorld[0]) # H
+
+strTestHello = "Hello!"
+# LOOP THROUGH STRINGS
+for i in strTestHello:
+  print(i)
+print(len(strTestHello))
+
+# String Check (not case sensitive)
+stringToCheck = "Don't forget to buy 🍫 CHOCOLATE Milk."
+print("Milk" in stringToCheck) # True
+if("Vanilla" not in stringToCheck): # True
+  print("Vanilla is not on the menu.")
+
+# Slice strings..
+print(strTestHelloWorld[0:3]) # Hel 
+# ^ from 0 to 2
+print(strTestHelloWorld[::-1]) # !dlroW ,olleH
+  # ^ reverses the string
+
+print(strTestHelloWorld[:2]) # Starts @ 1st char, counts 2 from 1st char.
+print(strTestHelloWorld[7:]) # Starts @ 4th char, goes until reaches the end.
+b = "Hello, World!"
+print(b[-5:-2]) #orl
+# Negative indexing starts at -1.
+# (There's no 0)
+# From -5 to -3
+
+# METHODS-END --------
+
 # ------------------------------------------------------------------
